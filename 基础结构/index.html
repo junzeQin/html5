@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="学习">
+    <meta name="description" content="秦凯学习">
     <title>Document</title>
 </head>
 
@@ -155,41 +159,59 @@
         </tbody>
     </table>
     <hr>
-    <a href="https://www.google.com.hk/">google一下</a>
+    <a href="https://www.google.com.hk/" target="_blank">google一下</a>
     <hr>
-    <pre>
-        <h6>保留原文格式</h6>
+    <pre><h6>保留原文格式</h6>
         I love you
                        I hate you 
     </pre>
     <hr>
     <form action="https://www.google.com.hk/search" method="get">
-        搜索：<input type="text" name="q"><br>
-        账号：<input type="text" name="username" value="qinkai" disabled><br>
-        密码：<input type="password" name="password" value="qinkai"><br>
-        性别：<input type="radio" name="gender" value="male" checked>男
-        <input type="radio" name="gender" value="female">女<br>
-        爱好：<input type="checkbox" name="hobby" value="smoke" checked>抽烟
-        <input type="checkbox" name="hobby" value="drink">喝酒
-        <input type="checkbox" name="hobby" value="perm">烫头<br>
-        籍贯：<select name="place">
-            <option value="0" selected>辽宁</option>
-            <option value="1">山东</option>
-            <option value="2">河南</option>
-            <option value="3">北京</option>
-        </select><br>
-        其它：<textarea name="other" cols="23" rows="3">学习很好</textarea><br>
+        <fieldset>
+            <legend>主要信息</legend>
+            <label for="search">搜索：</label>
+            <input id="search" type="text" name="q"><br>
+        </fieldset>
+        <fieldset>
+            <legend>附加信息</legend>
+            <label for="username">账号：</label><input id="username" name="username" value="qinkai" disabled><br>
+            <label>密码：<input id="password" type="password" name="password" value="qinkai"></label><br>
+            性别：<input type="radio" name="gender" value="male" checked>男
+            <input type="radio" name="gender" value="female">女<br>
+            爱好：<input type="checkbox" name="hobby" value="smoke" checked>抽烟
+            <input type="checkbox" name="hobby" value="drink">喝酒
+            <input type="checkbox" name="hobby" value="perm">烫头<br>
+            籍贯：<select name="place">
+                <option value="0" selected>辽宁</option>
+                <option value="1">山东</option>
+                <option value="2">河南</option>
+                <option value="3">北京</option>
+            </select><br>
+            <label for="other">其它：</label>
+            <textarea id="other" name="other" cols="21" rows="3">学习很好</textarea>
+        </fieldset>
         <input type="hidden" name="from" value="toutiao">
         <button type="submit">google一下</button>
         <button type="reset">重置</button>
     </form>
     <hr>
+    <a href="https://www.taobao.com" target="tb">淘宝</a><br>
+    <iframe name="tb" width="900px" height="300px" frameboder="1"></iframe>
+    <hr>
+    <div>我 美女</div>
+    <div>我&nbsp;&nbsp;&nbsp;&nbsp;美女</div>
+    <div>我&#160;&#160;&#160;&#160;美女</div>
+    <div>我&lt;美女&gt;在html中想使用空格，请输入: &amp;nbsp;</div>
+    <div>&yen; &dollar;</div>
+    <div>© &copf;</div>
+    <hr>
+    <bdo dir="rtl">你是年少的欢喜</bdo>
+    <div dir="rtl" title="啊？">你是年少的欢喜</div>
     <hr>
     <a href="#">回到顶部</a>
-    <a href="">刷新页面</a>
+    <a href>刷新页面</a>
     <a href="javascript:alert(3);">弹出窗口</a>
     <hr>
 </body>
-
 
 </html>
