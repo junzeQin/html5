@@ -1,0 +1,213 @@
+h2 {
+    color: orange;
+}
+
+.speak {
+    color: black;
+}
+
+.answer {
+    color: blue;
+}
+
+.bigFont {
+    font-size: 40px;
+}
+
+#author {
+    font-size: 20px;
+}
+
+p.dog {
+    color: green;
+}
+
+.animal.dog {
+    color: aqua;
+}
+
+.animal,
+.dog {
+    background-color: brown;
+}
+
+ul li {
+    color: red;
+}
+
+ol li {
+    color: green;
+}
+
+ol li a {
+    color: grey;
+}
+
+.elephant div.front-end {
+    color: orange;
+}
+
+div>a {
+    color: red;
+}
+
+div>p>a {
+    color: green;
+}
+
+div .name>a {
+    color: chartreuse;
+}
+
+/* div紧紧相邻的p标签 */
+div+p {
+    font-size: 30px;
+}
+
+/* div下面所有的p标签 */
+div~p {
+    color: goldenrod;
+}
+
+li+li {
+    font-size: 25px;
+}
+
+[title] {
+    color: red;
+}
+
+[title="html"] {
+    color: green;
+}
+
+[title^="h"] {
+    font-size: 25px;
+}
+
+[title$="a"] {
+    font-size: 35px;
+}
+
+[title*="m"] {
+    background-color: aquamarine;
+}
+
+/* 伪类的顺序很重要，下面就是正确的顺序 lvha */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+input:focus {
+    color: orange;
+    background-color: green;
+}
+
+div>p:first-child {
+    color: rebeccapurple;
+}
+
+div>p:last-child {
+    color: rebeccapurple;
+}
+
+div>p:nth-child(2n) {
+    color: red;
+}
+
+div>p:nth-child(2n+1) {
+    color: orange;
+}
+
+div>p:nth-child(-n+5) {
+    color: blue;
+}
+
+div>p:first-of-type {
+    color: chartreuse;
+}
+
+div>p:nth-last-child(3) {
+    color: blueviolet;
+}
+
+span:only-child {
+    color: red;
+}
+
+div:empty {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+div>p:is(.fail) {
+    color: black;
+}
+
+input:checked {
+    width: 100px;
+    height: 100px;
+}
+
+input:enabled {
+    background-color: green;
+}
+
+input:disabled {
+    background-color: gray;
+}
+
+div p:first-child {
+    color: green;
+}
+
+div#one,
+div#two,
+div#three {
+    background-color: orange;
+    height: 100px;
+}
+
+div#one:target,
+div#two:target,
+div#three:target {
+    background-color: green;
+}
+
+#article::first-letter {
+    font-size: 25px;
+}
+
+#article::first-line {
+    background-color: orange;
+}
+
+#article::selection {
+    background-color: green;
+}
+
+#search::placeholder {
+    color: skyblue;
+}
+
+#article~p::before {
+    content: "$";
+    color: red;
+}
+
+#article~p::after {
+    content: "￥";
+}
