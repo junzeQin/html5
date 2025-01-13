@@ -187,8 +187,21 @@ div#three:target {
     background-color: green;
 }
 
-#article::first-letter {
+#article {
     font-size: 25px;
+    text-indent: 50px;
+    text-align: center;
+    line-height: 1.2;
+    height: 1.3;
+}
+
+#article span {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+#article::first-letter {
+    font-size: 35px;
 }
 
 #article::first-line {
@@ -200,7 +213,7 @@ div#three:target {
 }
 
 #search::placeholder {
-    color: skyblue;
+    color: skyblue !important;
 }
 
 #article~p::before {
@@ -210,4 +223,26 @@ div#three:target {
 
 #article~p::after {
     content: "￥";
+}
+
+.color {
+    color: rgb(138, 43, 226, 0.5);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "宋体", serif;
+}
+
+#table table {
+    border: 2px green solid;
+    width: 500px;
+    table-layout: fixed;
+    border-spacing: 10px;
+    border-collapse: separate;
+    empty-cells: hide;
+    caption-side: top;
+}
+
+#table table td,th{
+    border: 2px orange solid;
 }
