@@ -1,0 +1,11 @@
+#first {
+    width: 600px;
+    height: 400px;
+    background-color: skyblue;
+}
+
+#first img {
+    width: 200px;
+    float: left;
+    margin-right: 0.5em;
+}

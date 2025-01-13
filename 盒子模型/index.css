@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.outer {
+    min-width: 400px;
+    max-width: 800px;
+    min-height: 400px;
+    max-height: 800px;
+    font-size: 0px;
+    background-color: orange;
+    border: 10px dashed black;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.inner1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.inner1 a {
+    text-decoration: dotted;
+    cursor: wait;
+    font-size: 40px;
+    color: brown;
+    vertical-align: middle;
+    font-weight: bold;
+}
