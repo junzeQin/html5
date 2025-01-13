@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #first {
     width: 600px;
     height: 400px;
@@ -8,4 +13,151 @@
     width: 200px;
     float: left;
     margin-right: 0.5em;
+}
+
+#second {
+    width: 400px;
+    background-color: skyblue;
+    font-size: 0;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+#second .box {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#second .box1 {
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+    float: inline-start;
+}
+
+#second .box2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    float: inline-start;
+}
+
+#second .box3 {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    float: inline-start;
+}
+
+#second .box4 {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    clear: both;
+}
+
+#third {
+    width: 400px;
+    background-color: green;
+}
+
+.leftfix {
+    float: left;
+}
+
+.rightfix {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#fourth {
+    width: 960px;
+    height: 800px;
+    background-color: orange;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#fourth .page-header {
+    line-height: 200px;
+}
+
+#fourth .page-header .logo {
+    width: 320px;
+    height: 200px;
+    text-align: center;
+    background-color: pink;
+}
+
+#fourth .page-header .banner1 {
+    width: 300px;
+    height: 200px;
+    background-color: pink;
+    margin: 0 10px;
+}
+
+#fourth .page-header .banner2 {
+    width: 320px;
+    height: 200px;
+    background-color: pink;
+}
+
+#fourth .menu {
+    line-height: 30px;
+    background-color: beige;
+    margin-top: 10px;
+}
+
+#fourth .content {
+    margin-top: 10px;
+}
+
+#fourth .content .left .top .item1,
+.item2 {
+    width: 370px;
+    height: 200px;
+    line-height: 200px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+#fourth .content .left .bottom {
+    margin-top: 10px;
+}
+
+#fourth .content .left .bottom .item3,
+.item4,
+.item5,
+.item6 {
+    width: 180px;
+    height: 200px;
+    line-height: 200px;
+    background-color: green;
+    margin-right: 10px;
+}
+
+#fourth .content .right .item7,
+.item8,
+.item9 {
+    width: 198px;
+    height: 130px;
+    line-height: 130px;
+    background-color: cadetblue;
+}
+
+#fourth .content .right .item8 {
+    margin: 10px 0;
+}
+
+#fourth .foot {
+    margin-top: 10px;
+    height: 120px;
+    line-height: 120px;
+    background-color: greenyellow;
 }

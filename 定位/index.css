@@ -1,0 +1,55 @@
+.outer {
+    width: 800px;
+    background-color: skyblue;
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+}
+
+.outer .box{
+    width: 200px;
+    height: 200px;
+}
+
+.outer .box1{
+    background-color: brown;
+}
+
+.outer .box2{
+    background-color: orange;
+    position: relative;
+    top: -150px;
+    left: 50px;
+}
+
+.outer .box3{
+    background-color: green;
+    transition: 1s all linear;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}
+
+.outer .box4{
+    background-color: blue;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+}
+
+.outer:hover .box3 {
+}
+
+.outer .box5{
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid black;
+    font-size: 20px;
+}
+
+.outer .box6{
+    background-color: red;
+}
