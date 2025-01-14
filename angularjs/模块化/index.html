@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="test1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模块化</title>
+    <script src="../angular.js" charset="UTF-8"></script>
+    <script>
+        let a = 'a';
+        let mod = angular.module('test1', [])
+        mod.controller('ctrl1', function ($scope) {
+            $scope.b = 0;
+            $scope.c = 0;
+            $scope.parseInt = function (str) {
+                return window.parseInt(str);
+            };
+        });
+    </script>
+</head>
+
+<body ng-controller="ctrl1">
+    <input type="text" ng-model="b">
+    <input type="text" ng-model="c">
+    {{parseInt(b)+parseInt(c)}}
+</body>
+
+</html>

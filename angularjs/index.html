@@ -50,6 +50,13 @@
             <li ng-repeat="item in arr2">{{item.user}}</li>
         </ul>
     </div>
+    <hr>
+    <div ng-init="arr3=[1,2,3,4,4]">
+        <ul>
+            <li ng-repeat="(index,value) in arr3">{{value}}</li>
+        </ul>
+    </div>
+    <hr>
 </body>
 
 </html>
