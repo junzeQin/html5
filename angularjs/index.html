@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angularjs</title>
+    <script src="angular.js" charset="UTF-8"></script>
+    <style>
+        div {
+            height: 400px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+    </style>
+    <script>
+        // window.onload = function () {
+        //     let input1 = document.getElementById("input1");
+        //     let div1 = document.getElementById("div1");
+
+        //     input1.oninput = function () {
+        //         div1.innerHTML = input1.value
+        //     };
+        // };
+    </script>
+</head>
+
+<body>
+    <input type="text" id="input1" ng-model="a">
+    <div id="div1" ng-bind="a"></div>
+</body>
+
+</html>
