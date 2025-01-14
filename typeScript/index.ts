@@ -70,20 +70,22 @@ var nameObj = {
 var myName = nameObj.getName();
 console.log(myName().n);
 
-// function test3(p: string): string;
-// function test3(a: number): number;
-// function test3(s: any): any {
-//   if (s && typeof s === "string") {
-//     console.log(111);
-//   } else {
-//     console.log(222);
-//   }
-// }
-// test3();
+function test3(p: string): string;
+function test3(a: number): number;
+function test3(s: any): any {
+  if (s && typeof s === "string") {
+    console.log(111);
+  } else {
+    console.log(222);
+  }
+}
+
+test3(333);
 
 class person {
   name: string;
   age: number;
+
   constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
@@ -94,5 +96,16 @@ class person {
   }
 }
 
-var p = new person('张三',18);
-console.log(p.age)
+var p = new person("张三", 18);
+console.log(p.age);
+
+class student extends person {
+  school: string;
+  constructor(school: string, name: string, age: number) {
+    super(name, age);
+    this.school = school;
+  }
+}
+
+var st = new student("清华大学", "张三", 18);
+console.log(st.school);

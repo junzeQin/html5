@@ -1,3 +1,13 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var hello = "hello world";
 hello = "qinkai";
 console.log(hello);
@@ -69,16 +79,15 @@ var nameObj = {
 };
 var myName = nameObj.getName();
 console.log(myName().n);
-// function test3(p: string): string;
-// function test3(a: number): number;
-// function test3(s: any): any {
-//   if (s && typeof s === "string") {
-//     console.log(111);
-//   } else {
-//     console.log(222);
-//   }
-// }
-// test3();
+function test3(s) {
+    if (s && typeof s === "string") {
+        console.log(111);
+    }
+    else {
+        console.log(222);
+    }
+}
+test3(333);
 var person = /** @class */ (function () {
     function person(name, age) {
         this.name = name;
@@ -89,5 +98,16 @@ var person = /** @class */ (function () {
     };
     return person;
 }());
-var p = new person('张三', 18);
+var p = new person("张三", 18);
 console.log(p.age);
+var student = /** @class */ (function (_super) {
+    __extends(student, _super);
+    function student(school, name, age) {
+        var _this = _super.call(this, name, age) || this;
+        _this.school = school;
+        return _this;
+    }
+    return student;
+}(person));
+var s = new student("清华大学", "张三", 18);
+console.log(s.school);
