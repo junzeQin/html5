@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" ng-app="test1">
+<html lang="zh-CN" ng-app="test">
 
 <head>
     <meta charset="UTF-8">
@@ -7,22 +7,24 @@
     <title>模块化</title>
     <script src="../angular.js" charset="UTF-8"></script>
     <script>
-        let a = 'a';
-        let mod = angular.module('test1', [])
-        mod.controller('ctrl1', function ($scope) {
+        let mod_1 = angular.module('test1', [])
+        mod_1.controller('ctrl1', function ($scope) {
+            $scope.a = 0;
+        });
+        let mod_2 = angular.module('test2', [])
+        mod_2.controller('ctrl2', function ($scope) {
             $scope.b = 0;
-            $scope.c = 0;
-            $scope.parseInt = function (str) {
-                return window.parseInt(str);
-            };
+        });
+        let mod = angular.module('test', ['test1', 'test2'])
+        mod.controller('ctrl', function ($scope) {
         });
     </script>
 </head>
 
-<body ng-controller="ctrl1">
-    <input type="text" ng-model="b">
-    <input type="text" ng-model="c">
-    {{parseInt(b)+parseInt(c)}}
+<body ng-controller="ctrl">
+    <input type="text" ng-model="a"> {{a}}
+    <br>
+    <input type="text" ng-model="b"> {{b}}
 </body>
 
 </html>

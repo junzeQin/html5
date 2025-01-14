@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="test1">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过滤器</title>
+    <script src="../angular.js" charset="UTF-8"></script>
+    <script>
+        let mod_1 = angular.module('test1', [])
+        mod_1.controller('ctrl1', function ($scope) {
+            $scope.time = new Date();
+        });
+    </script>
+</head>
+
+<body ng-controller="ctrl1">
+    {{time | date: 'y年MM月dd日 HH:mm:ss'}}
+</body>
+
+</html>
