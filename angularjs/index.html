@@ -8,8 +8,7 @@
     <script src="angular.js" charset="UTF-8"></script>
     <style>
         div {
-            height: 400px;
-            height: 400px;
+            min-height: 50px;
             background-color: aquamarine;
         }
     </style>
@@ -28,6 +27,29 @@
 <body>
     <input type="text" id="input1" ng-model="a">
     <div id="div1" ng-bind="a"></div>
+    <hr>
+    <input type="text" id="input2" ng-model="b">
+    <div id="div2" ng-init="b='qinkai';">
+        我在输入什么：{{b}}
+    </div>
+    <hr>
+    <input type="text" id="input3" ng-model="c">
+    <input type="text" id="input4" ng-model="d">
+    <div id="div3" ng-init="c=0;d=0;">
+        相乘：{{c * d}}
+    </div>
+    <hr>
+    <div ng-init="arr1=[1,2,3,4,4]">
+        <ul>
+            <li ng-repeat="item in arr1 track by $index">{{item}}</li>
+        </ul>
+    </div>
+    <hr>
+    <div ng-init="arr2=[{user:'qinkai',age:13},{user:'zhangsan',age:13},{user:'qinkai',age:13},{user:'lisi',age:19}]">
+        <ul>
+            <li ng-repeat="item in arr2">{{item.user}}</li>
+        </ul>
+    </div>
 </body>
 
 </html>
